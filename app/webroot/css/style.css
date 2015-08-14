@@ -1,0 +1,491 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 14, 15, 9:14:48 AM
+    Author     : kimberlyu
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;   
+}
+.navbar{
+    margin: 0;
+    background-color: white;
+}
+ul.nav-home{
+  margin-top: 40px;
+}
+.home-logo{
+    height:125px;
+}
+.banner{
+    background: url('../img/banner.png') no-repeat center;
+    background-size: cover;
+    height: 415px;
+}
+.banner-content-block{
+    margin: 100px 0;
+    color: #fff;
+}
+.btn-getstart{
+    border: 2px solid #fff;
+    color: #fff;
+    padding:15px 40px;
+    background: none;
+    transition: 0.3s ease;
+}
+.btn-getstart:hover{
+    background: #fff !important;
+    color: #2CA9DE;
+}
+.navbar-nav li a{
+    //border: 2px solid #fff;   
+}
+.navbar-nav li a:hover{
+  border: 2px solid #2CA9DE;
+    background: none !important;
+}
+
+.content-blogck{
+    text-align: center;
+    margin-top: 150px;
+}
+.content-title{
+    font-weight: 400;   
+}
+.title-underline{
+    width: 20%;
+    border: 2px solid #14a6e0; 
+}
+.tag-line{
+    font-weight: 300;
+    margin-top:50px;
+}
+.buttom-banner-content{
+      margin: 30% 10%;   
+}
+.buttom-banner{
+    background:url(../img/gaussian-blur-wallpaper-18.jpg) no-repeat center ;
+    background-size: cover;
+    margin: 60px 0;
+    color: #fff;
+    height: 500px;
+}
+.buttom-banner .title{
+    font-weight:  300;
+    margin-bottom: 10px
+}
+.buttom-banner .tag-line{
+    font-weight: 300;
+    margin-top: 10px;
+}
+.content{
+    font-weight: 300;   
+}
+.form-block{
+    background: #dbdbdb;
+    padding: 70px 0;
+    margin-top: 50px;
+}
+.btn-submit{
+    background-color: #2DA8DD;
+    border: none;
+    width: 100%;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 300;   
+}
+.footer-block{
+    background: #000;
+    padding: 50px 0;
+    
+}
+.footer-block a{
+    color: #666666;
+}
+.footer-social-icon{
+    margin: 0;
+    padding: 0;
+}
+.footer-social-icon li{
+    list-style: none;
+    float: left;
+    padding: 0 10px;
+}
+.fw-semi-bold {
+  font-weight: 600;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-thin {
+  font-weight: 300;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.mt-xlg {
+  margin-top: 40px;
+}
+
+.mt-n-xlg {
+  margin-top: -40px;
+}
+
+.mt-lg {
+  margin-top: 30px;
+}
+
+.mt-n-lg {
+  margin-top: -30px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.mt-n {
+  margin-top: 20px;
+}
+
+.mt-md {
+  margin-top: 20px;
+}
+
+.mt-n-md {
+  margin-top: -20px;
+}
+
+.mt-sm {
+  margin-top: 10px;
+}
+.mt-xs{
+  margin-top: 5px;   
+}
+.mt-n-sm {
+  margin-top: -10px;
+}
+
+.mt-xs {
+  margin-top: 5px;
+}
+
+.mt-n-xs {
+  margin-top: -5px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-n-0 {
+  margin-top: 0;
+}
+
+.mb-xlg {
+  margin-bottom: 40px;
+}
+
+.mb-n-xlg {
+  margin-bottom: -40px;
+}
+
+.mb-lg {
+  margin-bottom: 30px;
+}
+
+.mb-n-lg {
+  margin-bottom: -30px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.mb-n {
+  margin-bottom: 20px;
+}
+
+.mb-md {
+  margin-bottom: 20px;
+}
+
+.mb-n-md {
+  margin-bottom: -20px;
+}
+
+.mb-sm {
+  margin-bottom: 10px;
+}
+
+.mb-n-sm {
+  margin-bottom: -10px;
+}
+
+.mb-xs {
+  margin-bottom: 5px;
+}
+
+.mb-n-xs {
+  margin-bottom: -5px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-n-0 {
+  margin-bottom: 0;
+}
+
+.ml-lg {
+  margin-left: 20px;
+}
+
+.ml-n-lg {
+  margin-left: -20px;
+}
+
+.ml {
+  margin-left: 15px;
+}
+
+.ml-n {
+  margin-left: 15px;
+}
+
+.ml-md {
+  margin-left: 15px;
+}
+
+.ml-n-md {
+  margin-left: -15px;
+}
+
+.ml-sm {
+  margin-left: 10px;
+}
+
+.ml-n-sm {
+  margin-left: -10px;
+}
+
+.ml-xs {
+  margin-left: 5px;
+}
+
+.ml-n-xs {
+  margin-left: -5px;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-n-0 {
+  margin-left: 0;
+}
+
+.mr-lg {
+  margin-right: 20px;
+}
+
+.mr-n-lg {
+  margin-right: -20px;
+}
+
+.mr {
+  margin-right: 15px;
+}
+
+.mr-n {
+  margin-right: 15px;
+}
+
+.mr-md {
+  margin-right: 15px;
+}
+
+.mr-n-md {
+  margin-right: -15px;
+}
+
+.mr-sm {
+  margin-right: 10px;
+}
+
+.mr-n-sm {
+  margin-right: -10px;
+}
+
+.mr-xs {
+  margin-right: 5px;
+}
+
+.mr-n-xs {
+  margin-right: -5px;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-n-0 {
+  margin-right: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.fa-2 {
+  font-size: 2em;
+    
+}
+.fa-3 {
+  font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(52, 52, 52, 0.41);
+}
+.fa-4 {
+    font-size: 5em;
+    text-shadow: 2px 2px 5px rgba(52, 52, 52, 0.41);
+}
+.fa-5 {
+  font-size: 12em;
+}
+.fa-6 {
+  font-size: 20em;
+}
+
+div.alert-box{
+    background-color: deepskyblue ;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    height:8vh;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    border-radius: 5px;
+    
+    box-shadow: 8px 8px 5px #888888;
+    text-shadow: 3px 3px 3px #888888;
+    white-space: nowrap;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #2BA8DC;
+}
+section.login-form-wrapper {
+  margin-top: 5%;
+}
+
+/* media query */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+     
+      .navbar-nav li a {
+        border-bottom: 1px solid rgba(154, 212, 236, 1);
+        border-top:none;
+      }
+      .navbar-header {
+        height: 125px;
+      }
+      .navbar-collapse  {
+        padding: 0px 30px !important;
+      }
+      .navbar-text{
+          display:none !important;
+      }
+      
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 991px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+     .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 10%;
+      }
+}
+ 
+.btn-sm, .btn-group-sm > .btn {
+    
+  padding: 3px 10px;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 70px;
+}
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+        padding-top: 15px;
+        width: 1120px;
+        text-align: center;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 10px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        
+        margin-bottom: 0;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: white;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -30px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        //color:#D9230F;
+        //color:blue;
+    }
+    .search-query{
+        padding-right: 35px !important;
+        padding-left: 15px !important;
+        
+    }
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+    
+    center {
+    display: block;
+    text-align: -webkit-left;
+    }
+
+

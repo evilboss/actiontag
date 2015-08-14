@@ -1,0 +1,59 @@
+
+
+div.alert-box-status{
+    background-color: #5cb85c ;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    height:6vh;
+    padding: 8px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    border-radius: 5px;
+    
+    box-shadow: 8px 8px 5px #888888;
+    white-space: nowrap;
+}
+
+
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+.inner-addon input { 
+    // IE7-8 doesn't have border-radius, so don't indent the padding 
+        
+        margin-bottom: 0;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+.inner-addon button { 
+       // border: solid gainsboro 1px;
+        background:  none;
+        
+    outline:none;
+}
+.inner-addon button:focus{outline:0;color:#a94442;}
+.inner-addon button:active {outline:0;}
+.inner-addon button:hover {outline:0;color:#FF0500}
+
+/* style icon */
+.inner-addon button{
+  position: absolute;
+  
+  //pointer-events: none;
+}
+
+/* align icon */
+.left-addon   button{ left:  0px;}
+.right-addon button{ right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

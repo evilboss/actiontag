@@ -1,0 +1,142 @@
+.status-onoffswitch {
+    position: relative; width: 55px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.status-onoffswitch-checkbox {
+    display: none;
+}
+.status-onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0px solid #999999; border-radius: 50px;
+    
+}
+.status-onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.status-onoffswitch-inner:before, .status-onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.status-onoffswitch-inner:before {
+    content: "|";
+    padding-left: 12px;
+    background-color: #49E845; color: #FFFFFF;
+}
+.status-onoffswitch-inner:after {
+    content: "O";
+    padding-right: 8px;
+    background-color: #E0E0E0; color: #A39999;
+    text-align: right;
+}
+.status-onoffswitch-switch {
+    display: block; width: 19px; margin: 2.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 32px;
+    border: 0px solid #999999; border-radius: 50px;
+    transition: all 0.3s ease-in 0s;
+}
+.status-onoffswitch-checkbox:checked + .status-onoffswitch-label .status-onoffswitch-inner {
+    margin-left: 0;
+}
+.status-onoffswitch-checkbox:checked + .status-onoffswitch-label .status-onoffswitch-switch {
+    right: 4px; 
+}
+
+/*
+.panel-onoffswitch {
+    position: relative; width: 53px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.panel-onoffswitch-checkbox {
+    display: none;
+}
+.panel-onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 50px;
+}
+.panel-onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.panel-onoffswitch-inner:before, .panel-onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 14px; padding: 0; line-height: 14px;
+    font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.panel-onoffswitch-inner:before {
+    content: "";
+    padding-left: 6px;
+    background-color: #337AB7; color: #FFFFFF;
+}
+.panel-onoffswitch-inner:after {
+    content: "";
+    padding-right: 6px;
+    background-color: #d9534f; color: #999999;
+    text-align: right;
+}
+.panel-onoffswitch-switch {
+    display: block; width: 30px; margin: -4.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 35px;
+    border: 2px solid #999999; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label .panel-onoffswitch-inner {
+    margin-left: 0;
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label .panel-onoffswitch-switch {
+    right: 0px; 
+}*/
+
+
+.panel-onoffswitch {
+    
+    position: relative; width: 96px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.panel-onoffswitch-checkbox {
+    display: none;
+}
+.panel-onoffswitch-label {
+    margin-bottom: 0px !important;
+    display: block; overflow: hidden; cursor: pointer;
+    height: 27px; padding: 0; line-height: 36px;
+    border: 0px solid #FFFFFF; border-radius: 40px;
+    background-color: #E0E0E0;
+    max-width: 47%;
+    transition: background-color 0.3s ease-in;
+}
+
+.panel-onoffswitch-label:before {
+    content: "";
+    display: block; width: 20px; margin: 4px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 68px;
+    border-radius: 44px;
+    box-shadow: 0 6px 12px 0px #757575;
+    transition: all 0.3s ease-in 0s;
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label {
+    background-color: #49E845;
+    
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label, .panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label:before {
+   border-color: #42A5F5;
+   
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label .panel-onoffswitch-inner {
+    margin-left: 0;
+    
+}
+.panel-onoffswitch-checkbox:checked + .panel-onoffswitch-label:before {
+    right: 49px; 
+    background-color: #F4FBFF; 
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
